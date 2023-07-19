@@ -1,9 +1,8 @@
 package com.example.core;
 
 import com.example.core.discount.DiscountPolicy;
-import com.example.core.discount.FixDiscountPolicy;
 import com.example.core.discount.RateDiscountPolicy;
-import com.example.core.member.MemberRespository;
+import com.example.core.member.MemberRepository;
 import com.example.core.member.MemberService;
 import com.example.core.member.MemberServiceImpl;
 import com.example.core.member.MemoryMemberRepository;
@@ -20,7 +19,7 @@ public class AppConfig {
     }
 
     @Bean
-    public MemberRespository memberRespository() {
+    public MemberRepository memberRespository() {
         return new MemoryMemberRepository();
     }
 
